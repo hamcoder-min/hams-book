@@ -1,0 +1,241 @@
+/* 전체 컨테이너 */
+.contents {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.cartTopWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.titleWrap {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stepWrapper {
+  display: flex;
+}
+
+/* 레이아웃 */
+.cartLayout {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.leftArea {
+  flex: 1;
+}
+
+/* 전체 선택 영역 */
+.selectArea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.checkLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.deleteSelectedBtn {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fff;
+  color: #555;
+  cursor: pointer;
+}
+
+.deleteSelectedBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.cartBox {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+}
+
+.empty {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+/* 아이템 */
+.cartItem {
+  display: flex;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.cartItem:last-child {
+  border-bottom: none;
+}
+
+.itemCheckbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.bookImage {
+  width: 110px;
+  height: 150px;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+.cartItem h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* 가격 */
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.originalPrice {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 14px;
+}
+
+.discountRate {
+  color: #4dac27;
+  font-weight: 700;
+}
+
+.discountedPrice {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* 수량 */
+.quantityContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.qtyControlWrapper {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+}
+
+.qtyBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qtyIcon {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.qtyValue {
+  width: 36px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.deleteBtn {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background: #f3f3f3;
+}
+
+/* 총 금액 */
+.itemTotal {
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* 우측 요약 영역 */
+.rightArea {
+  width: 300px;
+  background: #fafafa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.summary p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.finalPrice {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* 주문 버튼 */
+.orderBtn {
+  width: 100%;
+  padding: 14px 0;
+  background: #5156b2;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 6px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.orderBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+  .cartLayout {
+    flex-direction: column;
+  }
+
+  .rightArea {
+    width: 100%;
+  }
+}

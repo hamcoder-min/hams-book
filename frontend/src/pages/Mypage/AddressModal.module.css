@@ -1,0 +1,189 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+.modal {
+  width: 500px;
+  max-height: 750px !important;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0 30px 30px 30px;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--color-gray-300);
+}
+
+.header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 25px 0 20px;
+  margin: 0;
+}
+
+.closeBtn {
+  font-size: 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.closeBtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.label {
+  display: block;
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: 600;
+  color: #000;
+}
+
+.input {
+  width: 470px;
+  padding: 14px;
+  border-radius: 6px;
+  border: 1px solid var(--color-gray-400);
+  margin-bottom: 8px;
+  font-size: 15px;
+  outline: none;
+  overflow: auto;
+}
+
+.addressSearchButton {
+  width: 500px;
+  height: 44px;
+  border: 1px solid var(--color-gray-500);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding-left: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  background: #fafafa;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.addressSearchButton:hover {
+  background-color: var(--color-gray-200);
+}
+
+.addressSearchButton img {
+  width: 20px;
+  height: 20px;
+}
+
+.searchIcon {
+  font-size: 18px;
+  color: var(--color-gray-800);
+}
+
+.searchText {
+  font-size: 15px;
+  color: #000;
+  justify-content: center;
+}
+
+.addressTopRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.changeBtn {
+  padding: 6px 14px;
+  font-size: 14px;
+  border: 1px solid var(--color-gray-500);
+  background: var(--color-gray-100);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.addressInput {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid var(--color-gray-400);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+.addressInput[readonly] {
+  background: var(--color-gray-100);
+}
+
+.checkboxWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0 24px;
+  font-size: 15px;
+  color: #000;
+}
+
+.saveBtnWrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.saveBtn {
+  width: 130px;
+  height: 44px;
+  background-color: var(--color-blue-700);
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+  padding: 15px 0;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.saveBtn:hover {
+  background-color: var(--color-blue-900);
+}
+
+.saveBtn.disabled,
+.saveBtn:disabled {
+  background: var(--color-blue-400);
+  cursor: not-allowed;
+}
+
+.postcodeModal {
+  width: 520px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.postcodeBody {
+  height: 500px;
+  overflow-y: auto;
+}

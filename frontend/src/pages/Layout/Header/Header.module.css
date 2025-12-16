@@ -1,0 +1,38 @@
+.logo {
+  color: red;
+}
+
+.header {
+}
+
+.headerContainer {
+  max-width: var(--width-300);
+  margin: 0 auto;
+}
+
+/* 메인 공통 스타일... */
+.headerInner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: var(--width-300);
+  margin: 0 auto;
+  flex-wrap: nowrap;
+}
+.headerInner ul {
+  display: flex;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoWrapper h1 {
+  width: 160px;
+}
+
+.logoWrapper img {
+  width: 140px;
+}

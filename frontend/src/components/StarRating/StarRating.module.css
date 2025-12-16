@@ -1,0 +1,10 @@
+.cloverWrapper {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.cloverImg {
+  width: 14px;
+  height: 14px;
+}

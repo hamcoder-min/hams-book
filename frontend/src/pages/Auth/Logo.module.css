@@ -1,0 +1,25 @@
+/* 전체 레이아웃 */
+.container {
+    width: 360px;
+    margin: 80px auto;
+    text-align: center;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 로고 이미지 */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px; /* 기존 텍스트 로고 높이 유지 */
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 140px
+}
+
+.logoImg {
+    height: 300px;  /* ← 핵심: 텍스트 로고와 동일한 높이 */
+    width: 300px;   /* 비율 유지 */
+    object-fit: contain;
+}
+

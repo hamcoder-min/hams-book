@@ -1,0 +1,104 @@
+.reviewSection {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sectionTitle {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.reviewCount {
+    font-weight: normal;
+    color: #888;
+    margin-left: 6px;
+    font-size: 0.9em;
+}
+
+.reviewCard {
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+
+.reviewHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.memberId {
+    font-weight: bold;
+    color: #444;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.clover {
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+}
+
+.content {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.date {
+    font-size: 12px;
+    color: #888;
+}
+
+.noReview {
+    color: #888;
+}
+
+.writeButton {
+    background-color: #5156b2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.writeButton:hover {
+    background-color: #3f42a0;
+}
+
+
+
+.pencilIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+/* 드롭다운 */
+.sortDropdowns {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.sortDropdowns :nth-of-type(2) {
+  margin-right: 3px;
+}

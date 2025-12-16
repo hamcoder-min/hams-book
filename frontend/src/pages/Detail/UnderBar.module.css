@@ -1,0 +1,191 @@
+/* 하단 고정바 */
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  padding: 10px 0px;
+  z-index: 100;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/* 내부 컨텐츠 너비 제한 및 정렬 */
+.bottomBarContent {
+  max-width: 1000px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* 총 금액 */
+.priceInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  white-space:nowrap;
+}
+
+.label {
+  font-weight: 400; /* 글자 얇게 */
+  font-size: 16px;
+  color: #4a4a4a;
+  display: inline;
+}
+
+.amount {
+  font-weight: 700; /* 숫자 굵게 */
+  font-size: 25px;
+  color: #000000;
+  display: inline;
+}
+
+.one {
+  font-weight: 400; /* 숫자 굵게 */
+  font-size: 25px;
+  color: #000000;
+  display: inline;
+}
+
+/* 버튼 그룹 전체 */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* 왼쪽 컨트롤과 오른쪽 버튼 그룹 사이 간격 */
+}
+
+/* 왼쪽 컨트롤: 수량 + 좋아요 */
+.leftControls {
+  display: flex;
+  align-items: center;
+  gap: 14px; /* 수량과 좋아요 간격 */
+  margin-left: 200px; /* 총 금액과 왼쪽 컨트롤 사이 간격 추가 */
+}
+
+/* 오른쪽 버튼 그룹: 선물/장바구니/바로구매 */
+.rightButtons {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* 버튼끼리 간격 좁게 */
+}
+
+/* 수량 조절 박스 전체 */
+.qtyControlWrapper {
+  display: flex;
+  align-items: center;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* 수량 버튼 */
+.qtyBtn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* 수량 버튼 아이콘 */
+.qtyBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+/* 숫자 표시 */
+.qtyValue {
+  width: 36px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* 좋아요 버튼 */
+.iconBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.heartIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/* 세 버튼 공통 스타일 - 높이/너비 통일 */
+.giftBtn,
+.cartBtn,
+.buyBtn {
+  height: 50px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+  white-space: nowrap;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* 선물하기 버튼 */
+/*
+.giftBtn {
+  background: #fff;
+  color: #4a4a4a;
+  border: 1.5px solid #4a4a4a;
+}
+
+.giftBtn:hover {
+  background: #f0f0f0;
+}
+*/
+
+/* 장바구니 버튼 */
+.cartBtn {
+  background: #fff;
+  color: #5156b2;
+  border: 1.5px solid #5156b2;
+}
+
+.cartBtn:hover {
+  background: #f0f0f0;
+}
+
+/* 바로구매 버튼 */
+.buyBtn {
+  background:#5156b2;
+  color: #fff;
+  border: 1.5px solid #5e5ede;
+}
+
+.buyBtn:hover {
+  background: #3f42a0;
+}
+
+/* 선물하기 아이콘 */
+.presentIcon {
+  width: 24px;
+  height: 24px;
+}

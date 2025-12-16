@@ -1,0 +1,104 @@
+.itemWrap {
+  border-bottom: 1px solid var(--color-gray-300);
+  padding: 20px 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  align-items: center;
+  cursor: pointer;
+}
+
+.left {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.status {
+  padding: 4px 8px;
+  background-color: var(--color-blue-200);
+  color: var(--color-blue-700);
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.category {
+  color: var(--color-gray-800);
+  font-size: 14px;
+}
+
+.titleArea {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.qIcon {
+  display: inline-block;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  background-color: var(--color-blue-800);
+  color: #fff;
+  font-size: 14px;
+  margin-right: 28px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 24px;
+}
+
+.title {
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.date {
+  font-size: 13px;
+  color: var(--color-gray-700);
+}
+
+.contentBox {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: var(--color-gray-100);
+  border-radius: 10px;
+}
+
+.content {
+  white-space: pre-line;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.buttonArea {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.deleteBtn {
+  border: none;
+  background: none;
+  font-size: 13px;
+  cursor: pointer;
+  color: var(--color-gray-700);
+}
+
+.deleteBtn:hover {
+  background-color: var(--color-gray-200);
+}

@@ -1,0 +1,227 @@
+.wrapper {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 0 120px 30px;
+}
+
+.wrapper h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.wrapper p:first-child {
+  margin-bottom: 20px;
+  color: #000;
+  font-size: 15px;
+}
+
+.top {
+  border-bottom: 1px solid var(--color-gray-200);
+  padding-bottom: 10px;
+}
+
+.topBox {
+  background-color: var(--color-gray-100);
+  padding: 20px 24px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 20px;
+  border-bottom: 1px solid var(--color-gray-300);
+}
+
+.leftArea {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.leftArea h3 {
+  font-size: 16px;
+  color: #000;
+}
+
+.leftArea h3 span {
+  color: var(--color-green-800);
+}
+
+.rightArea button {
+  border: 1px solid var(--color-gray-300);
+  background: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.rightArea button:first-child:hover {
+  background: var(--color-gray-100);
+}
+
+.rightArea button img {
+  width: 16px;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.item {
+  display: flex;
+  gap: 18px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--color-gray-300);
+}
+
+.bookImg {
+  width: 100px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--color-gray-200);
+  cursor: pointer;
+}
+
+.itemInfo {
+  flex: 1;
+}
+
+.itemInfo h4 {
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #000;
+  cursor: pointer;
+}
+
+.itemInfo h4:hover {
+  text-decoration: underline;
+}
+
+.itemInfo p {
+  color: #000;
+  font-size: 13px;
+  margin: 0 0 5px 0;
+}
+
+.itemInfo span {
+  cursor: pointer;
+}
+
+.itemInfo span:hover {
+  text-decoration: underline;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 6px 0;
+}
+
+.itemInfoPrice {
+  font-size: 14px;
+  color: #000;
+  line-height: 22px;
+}
+
+.itemInfoPrice span {
+  font-weight: 700;
+}
+
+.divider {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 7px;
+  margin: 6px 6px 0;
+  background-color: #d5d5d5;
+  vertical-align: top;
+}
+
+.itemButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 20px;
+  min-width: 120px;
+}
+
+.itemButtons button {
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.itemButtons button:nth-child(1) {
+  background-color: var(--color-gray-700);
+  color: #fff;
+  border: 1px solid var(--color-gray-700);
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.itemButtons button:nth-child(1):hover {
+  background-color: var(--color-gray-800);
+  border-color: var(--color-gray-800);
+}
+
+.itemButtons button:nth-child(2) {
+  background-color: var(--color-blue-700);
+  color: #fff;
+  border: 1px solid var(--color-blue-700);
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.itemButtons button:nth-child(2):hover {
+  background-color: var(--color-blue-900);
+  border-color: var(--color-blue-900);
+}
+
+.noData {
+  text-align: center;
+  padding: 180px 0;
+}
+
+.noData img {
+  width: 46px;
+  height: 46px;
+  opacity: 0.8;
+}
+
+.noData p {
+  font-size: 15px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.noData button {
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: var(--color-blue-700);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+.noData button:hover {
+  background-color: var(--color-blue-900);
+  border-color: var(--color-blue-900);
+}
+
+.noDataInfo {
+  font-size: 14px;
+  font-weight: 600;
+}

@@ -1,0 +1,116 @@
+.noticeContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0;
+  color: #000;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.header {
+  margin-bottom: 10px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+.total {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.total span {
+  color: var(--color-green-800);
+}
+
+.noticeList {
+  border-top: 1px solid #000;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray-300);
+  color: var(--color-gray-800);
+  font-weight: 500;
+  padding: 16px 24px;
+  gap: 36px;
+}
+
+.no {
+  width: 60px;
+  text-align: center;
+}
+
+.title {
+  flex: 1;
+  padding-left: 24px;
+  text-align: center;
+}
+
+.category {
+  width: 88px;
+  text-align: center;
+}
+
+.date {
+  width: 70px;
+  text-align: center;
+}
+
+.colNo {
+  width: 60px;
+  text-align: center;
+}
+
+.colTitle {
+  flex: 1;
+  text-align: left;
+}
+
+.colCategory {
+  width: 88px;
+  text-align: center;
+}
+
+.colDate {
+  width: 70px;
+  text-align: center;
+}
+
+.listBody {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.noticeItem {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--color-gray-300);
+  padding: 24px;
+  transition: background-color 0.2s ease;
+  gap: 36px;
+  font-size: 14px;
+}
+
+.noticeItem:hover {
+  background-color: var(--color-gray-100);
+}
+
+.colTitle {
+  color: #000;
+  cursor: pointer;
+}
+
+.colTitle:hover {
+  text-decoration: underline;
+}
+
+.pagination {
+  margin: 30px 0;
+}

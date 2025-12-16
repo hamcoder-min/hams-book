@@ -1,0 +1,17 @@
+.layout {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 0px;
+  box-sizing: border-box;
+  gap: 46px;
+}
+
+.pageContent {
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+}

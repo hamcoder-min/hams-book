@@ -1,0 +1,240 @@
+.qnaContainer {
+  max-width: 800px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.qnaContainer h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 0;
+  border-bottom: 1px solid #000;
+  padding-bottom: 20px;
+  width: 960px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.fieldRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.fieldColumn {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.label {
+  flex: 0 0 120px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.input,
+.select,
+.textarea {
+  flex: 1;
+  min-width: 0;
+  border: 1px solid var(--color-gray-500);
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.input {
+  width: 825px;
+  height: 44px;
+  padding-left: 14px;
+}
+
+.select {
+  display: block;
+  width: 410px;
+  height: 44px;
+  margin-bottom: 12px;
+  padding: 0 14px;
+}
+
+.textarea {
+  min-height: 160px;
+  resize: none;
+  width: 825px;
+  height: 280px;
+  padding: 12px 14px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.charCount {
+  position: absolute;
+  bottom: 25px;
+  right: 115px;
+  font-size: 12px;
+  color: var(--color-gray-700);
+}
+
+.contactSection {
+  margin-top: 16px;
+}
+
+.border {
+  border-top: 1px solid var(--color-gray-300);
+  border-bottom: 1px solid var(--color-gray-300);
+  width: 960px;
+}
+
+.contactTitle {
+  font-weight: 700;
+  margin-top: 24px;
+  font-size: 16px;
+}
+
+.contactRow {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.contactType {
+  display: flex;
+  gap: 12px;
+}
+
+.phoneInput {
+  flex: 1;
+  min-width: 0;
+  width: 390px;
+  height: 42px;
+  padding: 0 14px;
+  margin-top: 12px;
+}
+
+.warning {
+  display: flex;
+  font-size: 12px;
+  color: var(--color-red-700);
+  font-weight: 400;
+  margin: 4px 0 0 0;
+}
+
+.warning img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.checkboxLabel {
+  font-size: 13px;
+  color: #000;
+  display: flex;
+  margin-top: 12px;
+  margin-right: 10px;
+  gap: 10px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.emailField {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.emailInput {
+  width: 390px;
+  height: 44px;
+  border: 1px solid var(--color-gray-500);
+  border-radius: 6px;
+  padding: 0 14px;
+  margin-top: 20px;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 40px 0 30px;
+}
+
+.cancelBtn,
+.submitBtn {
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancelBtn {
+  background-color: var(--color-gray-700);
+  color: #fff;
+}
+
+.cancelBtn:hover {
+  background-color: var(--color-gray-800);
+}
+
+.submitBtn {
+  background-color: var(--color-blue-400);
+  color: #fff;
+}
+
+.submitBtn.active {
+  background-color: var(--color-blue-700);
+}
+
+.submitBtn.active:hover {
+  background-color: var(--color-blue-900);
+}
+
+.noticeBox {
+  background-color: var(--color-gray-100);
+  padding: 24px;
+  border-radius: 16px;
+  font-size: 13px;
+  color: var(--color-gray-800);
+  line-height: 1.7;
+  width: 950px;
+}
+
+.noticeBox h4 {
+  font-size: 16px;
+  font-weight: bolder;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.noticeBox p {
+  margin: 2px 0;
+  font-size: 14px;
+  color: var(--color-gray-800);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.green {
+  color: var(--color-green-800);
+}

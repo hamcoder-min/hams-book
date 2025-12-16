@@ -1,0 +1,52 @@
+/* 화면 끝까지 가는 가로선(회색 border) */
+.listOuter {
+  position: relative;
+  background: #fff;
+}
+
+.listOuter::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  background: var(--color-gray-300);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.listInner {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px 48px;
+  padding: 15px 32px;
+  background-color: #fff;
+}
+
+/* 기존 스타일 그대로 */
+.storeItem {
+  padding: 0;
+  font-size: 15px;
+  color: var(--color-gray-800);
+  cursor: pointer;
+  transition: color 0.15s;
+  border: none;
+  background: none;
+  text-align: left;
+  font-weight: 400;
+  line-height: 1.5;
+  display: block;
+  width: 175px;
+  height: 22px;
+}
+
+.storeItem:hover {
+  color: #000;
+}
+
+.storeItem.active {
+  color: #000;
+  font-weight: 700;
+}
