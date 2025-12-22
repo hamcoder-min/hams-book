@@ -9,6 +9,8 @@ import org.springframework.data.repository.query.Param;
 public interface BookRepository extends JpaRepository<Book, Long> {
 
 
+
+
     @Query(value = """
         SELECT 
             b.book_id AS bookId,
@@ -37,5 +39,7 @@ public interface BookRepository extends JpaRepository<Book, Long> {
         """,
             nativeQuery = true)
     BookDetailDto findDetailByBookId(@Param("bookId") Long bookId);
+
+
 
 }

@@ -65,16 +65,20 @@ public class Member {
     }
 
     /**
-     * 카카오 로그인 최초 가입용 팩토리 메서드
+     * 카카오 최초 가입용 팩토리 메서드
      */
     public static Member createKakaoMember(String kakaoId) {
         Member m = new Member();
-
         m.kakaoId = kakaoId;
-        m.userId = "kakao_" + kakaoId;   // 아이디 충돌 방지
-        m.pwd = null;                    // 소셜 회원은 패스워드 없음
+        m.userId = "kakao_" + kakaoId; // 내부 ID
 
-        // 기본값 채움
+        // 카카오 사용자 기본 비밀번호 생성 (임시 비밀번호로 설정)
+        String defaultPassword = "kakao_" + kakaoId; // 예시 비밀번호, 필요시 변경
+
+        // 비밀번호 암호화는 서비스 계층에서 처리하도록 변경
+        m.pwd = defaultPassword; // 여기서는 평문으로
+
+        // NOT NULL 컬럼 기본값
         m.name = "카카오사용자";
         m.phone = "000-0000-0000";
         m.email = "kakao_" + kakaoId + "@kakao.com";
@@ -84,4 +88,5 @@ public class Member {
 
         return m;
     }
+
 }
