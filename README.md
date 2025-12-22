@@ -32,6 +32,6 @@
 
 ## 🤖 실행 방법
 
-- git clone https://github.com/lms3140/APES_library.git
+- git clone https://github.com/hamcoder-min/hams-book.git
 - cd frontend
 - npm run dev
